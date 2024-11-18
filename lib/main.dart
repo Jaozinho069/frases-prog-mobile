@@ -1,21 +1,9 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:fraeses/home.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Sorteio de Frases',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
-    );
-  }
+void main(){
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: HomeScreen(),
+  ));
 }
